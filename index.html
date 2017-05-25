@@ -367,20 +367,20 @@
 <p>高级任务管理工具和基础任务管理工具的分界线，我认为是「能否建立复杂的自定义过滤」，因为 Things 2 做不到这一点，所以在 <a href="https://www.zhihu.com/lives/users/49f5a9a90f97745d59622db268528562" target="_blank" rel="external">知乎 Live</a> 里我没有把它视为和 Todoist、2Do、OmniFocus 一级的工具。我们这次可以看看，Things 3 有没有做到这一点。</p>
 <h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表是最传统的任务的组织方式，从没有智能设备起人们就用纸笔记录来列表，智能设备上的工具也无一例外地延续了这种方式。有人可能会说现在有些工具在使用看板的形式，但其实看板也可以看作列表的变形。</p>
 <h3 id="传统的层级结构"><a href="#传统的层级结构" class="headerlink" title="传统的层级结构"></a>传统的层级结构</h3><p>Things 3 的任务系统层级总共分 5 级：</p>
-<p><img src="/iamge/thing1.png" alt=""><br>Things 3 的标签系统示意</p>
+<p><img src="/iamge/thing1.png" alt="thing1"><br>Things 3 的标签系统示意</p>
 <p><strong>区域（Area）：</strong> 如其名称所示，用于分割区域。这一点上相当于 2Do 的列表组（List Group），和 OmniFocus 的文件夹（Folder）。但区别在于，Things 的区域下面不仅可以放列表，也可以直接放任务，这样你可以把那些属于一个任务区域，但是又不属于任何一个项目的杂项放在它的下面。这个功能在 Things 2 实现得非常糟糕，因为在软件的界面上 Things 2 根本没有显示出区域与项目的关联，两者是分开的。Things 3 终于在视觉上把它们统一了。区域的下一级有项目和任务。</p>
 <p><strong>项目（Project）：</strong> 传统的项目/列表的概念，不需要多介绍。它的下一级是标题或任务。</p>
 <p><strong>标题（Heading）：</strong> 用于分割项目中的任务，是 Things 3 的一个新形式。标题下面的任务是强依附于标题的，当我们把标题移动到其它项目时，下面的任务也会随之移走。标题的下一级是任务。</p>
 <p><strong>待办事项（To do）：</strong> 传统的任务（Task）的概念，也不需要多介绍。它的下一级是清单。</p>
 <p><strong>清单（Checklist）：</strong> 清单附属于任务，没有任何独立性，不能被拖拽出动作或移动到其它动作。清单里的项目不能被视作任务，因为它不能添加任何附加内容，比如日期、备注、标签。所以有时候我们觉得应该是可以用清单列出的事，因为需要添加不同的标签，所以需要把它升级为任务。比如我们播客剪辑和发布，三个人是有不同分工的。所以不同的任务需要用标签标上指派给了谁：</p>
-<p><img src="/iamge/thing2.png" alt=""><br>标签指派</p>
+<p><img src="/iamge/thing2.png" alt="thing2"><br>标签指派</p>
 <p>总的来说，可以这样理解 Things 3 的层级结构：它的核心是「项目—任务」这两个层级。在任务之下，用「清单」的形式来实现子任务。Things 3 又加入了「区域」和「标题」这两条线，一条用于把项目划开，一条用于把项目下的任务划开。一共 5 层，我想这足以满足大部分人的需要了。</p>
 <h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><p>标签是 LTF 系统里第二个重要的维度，在 Things 3 目前在用的这个系统里标签有着比在其它工具中更重要的作用。</p>
 <h3 id="支持层级嵌套"><a href="#支持层级嵌套" class="headerlink" title="支持层级嵌套"></a>支持层级嵌套</h3><p>首先说一下 Things 3 的标签层级。Things 3 的标签是支持层级的，而且顶级层级的标签下也可以放任务，这一点会让不少喜欢用标签的人满意。</p>
-<p><img src="/iamge/thing3.png" alt=""><br>标签管理界面</p>
+<p><img src="/iamge/thing3.png" alt="thing3"><br>标签管理界面</p>
 <p>在 macOS 上你可以用 <code>⇧ + ⌘ + T</code> 呼出标签菜单，但在这个地方你只能管理标签，删除、新建，或者给它们排排序、改改名。如果你想像其它工具一样，在软件的主界面上找到一个地方，可以显示所有标签，然后选择某个标签就可以看到它下面的所有任务，那可能要失望。</p>
 <h3 id="显示方式"><a href="#显示方式" class="headerlink" title="显示方式"></a>显示方式</h3><p>Things 3 没有像 <a href="https://sspai.com/post/38982" target="_blank" rel="external">Todoist</a>、<a href="https://sspai.com/search/article?q=2do" target="_blank" rel="external">2Do</a>、<a href="https://sspai.com/search/article?q=omniFocus" target="_blank" rel="external">OmniFocus</a> 给标签一个单独的显示界面，让我们可以通过这个界面显示所有的标签。</p>
-<p><img src="/iamge/thing4.png" alt=""><br>2Do、Todoist、OmniFocus iOS 应用的标签界面</p>
+<p><img src="/iamge/thing4.png" alt="thing4"><br>2Do、Todoist、OmniFocus iOS 应用的标签界面</p>
 <p>Things 3 在界面上主要是通过每个列表顶部的标签栏来显示标签。而且它不会显示所有的标签，只会显示该列表目前所含任务配有的标签。比如我总共有 20 个标签，但是这个列表下的任务配有的标签加起来也只有 5 个，那就只显示这 5 个标签，而不会显示所有的标签了。</p>
 <p>这个只展示有效标签的想法很不错，但也有一定的背景原因，那就是 Things 是个对标签依附很强的工具，它的过滤主要是以标签为维度实现的。你在「今天」这些列表里只能通过标签来筛选任务，不能通过列表，也就是说，如果你想通过列表筛任务的话，不说每个项目，至少每个区域——一般人会是「个人」、「工作」、「学校」、「副业」等——都需要附上一个标签，而且 Things 能够并从功能上鼓励你给区域套标签。除此之外，Things 3 依然不支持多人协作，在 Things 2 里的联系人机制也被撤掉， <a href="https://support.culturedcode.com/customer/en/portal/articles/2803571-using-contacts" target="_blank" rel="external">官方文档</a> 里写道：</p>
 <blockquote>
@@ -388,7 +388,7 @@
 </blockquote>
 <p>所以如果你的任务有委托人，你就需要多加几个委托人的标签。所以如果一个人有比较成熟的任务管理系统和思路，那么他使用 Things 的标签量必然比他用其它几个工具要多。因为 OmniFocus 和 2Do 支持用列表做过滤，而 Todoist 不仅支持用列表做过滤，指派人都化为了特殊的功能，完全不需要借助标签。所以这时候，就是要考虑如何在显示方式上做精简。</p>
 <p>除了在界面上可以显示标签，如果想查看某个标签下所有的任务，可以通过搜索标签来实现。</p>
-<p><img src="/iamge/thing5.gif" alt=""><br>搜索标签</p>
+<p><img src="/iamge/thing5.gif" alt="thing5"><br>搜索标签</p>
 <p>它这个搜索界面的呼出方式还是不错的，在 macOS 上，除了可以用 <code>⌘ + F</code> 呼出以外，也可以直接在任何界面开始输入，输入的当时就会呼出这个界面开始执行搜索。但是问题是如果你的标签用中文的话，你可能不会喜欢直接输入，因为第一个输入的字母还是会被视为英文。比如你输入「gongzuo」准备找「工作」这个标签，结果你会找到「g哦呢工作」，所以建议还是用英文来做标签。</p>
 <h3 id="作用对象"><a href="#作用对象" class="headerlink" title="作用对象"></a>作用对象</h3><p>Things 的标签的作用对象不止是单个的任务，也支持项目和区域。在 Things 的 <a href="https://support.culturedcode.com/customer/portal/articles/2803581" target="_blank" rel="external">官网</a> 里对标签有一句描述：</p>
 <blockquote>
@@ -396,19 +396,19 @@
 </blockquote>
 <p>加粗的那句意思是「单个任务会继承它所在的列表的标签」。但这个情况目前有一些奇怪：</p>
 <p>首先通过「今天」这个界面看，它确实是这样的。当我们给「工作」这个区域打了「工作」的标签，在「今天」这个界面选择它就会显示所有「工作」这个区域下的任务：</p>
-<p><img src="/iamge/thing6.png" alt=""><br>通过「今天」里的标签查看任务</p>
+<p><img src="/iamge/thing6.png" alt="thing6"><br>通过「今天」里的标签查看任务</p>
 <p>但是，当我们看「工作」区域下一个个单独的动作或者项目，会发现它们没有继承这个标签，这就导致，通过标签的搜索界面查看「工作」这个标签时看不到这些任务：</p>
-<p><img src="/iamge/thing7.png" alt=""><br>通过搜索界面里的标签查看任务</p>
+<p><img src="/iamge/thing7.png" alt="thing7"><br>通过搜索界面里的标签查看任务</p>
 <p>这说明在 Things 3 里如果一个任务没被 <strong>单独</strong> 打上「工作」标签，它就不会出现在搜索结果里。</p>
 <h3 id="用快捷键批量添加标签"><a href="#用快捷键批量添加标签" class="headerlink" title="用快捷键批量添加标签"></a>用快捷键批量添加标签</h3><p>Things 3 可以在标签管理界面给标签设置快捷键，当你想给多个任务打标签时，可以先选中这些任务，再按 <code>Ctrl + 快捷键</code> 来批量给这些任务打标签。</p>
-<p><img src="/iamge/thing8.gif" alt=""><br>批量为任务打标签</p>
+<p><img src="/iamge/thing8.gif" alt="thing8"><br>批量为任务打标签</p>
 <h2 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h2><p>过滤是在任何一个高级一点的文件整理工具上都必不可少的功能，我们很多人对它应该也不陌生。在 macOS 中过滤无处不在：原生邮件应用的智能邮箱、iTunes 的智能播放列表、Finder 的智能文件夹统统是过滤的形式……</p>
 <p>在任务管理中，它最大的用处是减少一个列表中当前无效的项（item）。比如我们到了办公室，想看「今天的工作」。如果我们只看「今天」这个界面的任务，会发现不光有工作的，还可能有「擦马桶盖」这种个人任务。而如果只看工作的项目，就会发现里面有好多不是今天要做的，杂七杂八一大堆东西。把满足「今天」的「工作」这两个条件的任务筛选出来，就是过滤的任务，它可以让你专注于当下这个场景应该处理的事。所以它非常重要。</p>
 <h3 id="基于标签的过滤形式"><a href="#基于标签的过滤形式" class="headerlink" title="基于标签的过滤形式"></a>基于标签的过滤形式</h3><p>Things 的过滤系统的维度组合只有两种：「标签+日期」或「标签+项目」，因为我们只能在日期列表或者项目列表上指定标签过滤任务，而没有办法在日期界面指定项目再指定标签。因为在日期界面点项目名的话，就会直接跳到那个项目的界面里去了。</p>
 <p>这就导致了我之前提到的问题——如果想把日期界面和项目结合起来，就必须要给项目套标签，至少要给区域套标签。这样就可以在「今天」这个界面选择项目的标签，然后再进一步地选择其它的标签。</p>
-<p><img src="/iamge/thing9.png" alt=""><br>通过标签间接实现「日期+项目」的组合</p>
+<p><img src="/iamge/thing9.png" alt="thing9"><br>通过标签间接实现「日期+项目」的组合</p>
 <p>在 Things 里，当多选标签的时候，它显示的结果是这多个标签的交集，而不是并集。</p>
-<p><img src="/iamge/thing10.png" alt=""><br>交集与并集</p>
+<p><img src="/iamge/thing10.png" alt="thing10"><br>交集与并集</p>
 <p>比如说我在「Checked 节目发布」这个项目里，同时选择了「Eames」和「Gabrilla」这两个人物标签，它显示的不是带有「Eames」的任务 + 带有「Gabrilla」的任务，它显示的是同时带有「Eames」和「Gabrilla」的任务。</p>
 <p>这个设计自身没有问题，但也应该考虑到并集的情况，给用户一个实现并集的方式。让过滤的制作可以更灵活。</p>
 <p>最后，Things 的过滤不能预置，也就是说它这个过滤都得临时手动点出来，这一点会让使用常用过滤很不效率。也导致很多人在测评 Things 的时候会完全忽视它的过滤的能力。但是从另一方面看，预设过滤有它的修改成本，每次需要过滤任务的时候再临时选择一下过滤条件想想也说得过去。</p>
@@ -416,7 +416,7 @@
 <h2 id="Things-3-的独特逻辑"><a href="#Things-3-的独特逻辑" class="headerlink" title="Things 3 的独特逻辑"></a>Things 3 的独特逻辑</h2><p>Things 3 有它自己的一套逻辑，包括组织任务的结构和日期。我上手它之后发现了不少用其它工具的思路不能很好解释的现象。</p>
 <p>比如在我刚上手 Things 的时候就做了一个很常规的动作：给收件箱里的任务套上一个「今天」的日期。然后我发现这个任务从收件箱消失了（现象一）。然后我在「今天」这个列表里找到它，把这个任务「今天」这个日期属性去掉，看它会不会回到收件箱。结果发现它没回到收件箱，而是跑到了「随时（Anytime）」这个列表里（现象二）。</p>
 <p>这个过程图解起来是这样的：</p>
-<p><img src="/iamge/thing11.png" alt=""><br>日期一加一减，任务换俩位置</p>
+<p><img src="/iamge/thing11.png" alt="thing11"><br>日期一加一减，任务换俩位置</p>
 <p>我发现这两个现象的 combo 之后就愣了，然后把它发到了微博和 Twitter，获得了一些解释，其中最多的是说这样才是真正的 GTD，因为在 GTD 中收件箱只做收集用，一个任务被标上日期就说明它被「处理」过了，所以它不能留在收件箱了。</p>
 <p>看似挺有道理，但是当我们给收件箱里的任务单独加备注、加清单、加 deadline、加标签，这个任务都不会移走，依然会留在收件箱。难道这些都不算处理吗？</p>
 <p>所以，用 GTD 解释 Things 并不能把第一个现象解释明白。它关系到 Things 这个软件的结构设计。</p>
@@ -437,7 +437,7 @@
 <p>盗版的工具你不会珍惜。</p>
 <p>感谢与我讨论过这些问题的 Things 用户，尤其是 <a href="http://weibo.com/gviridis?refer_flag=1005055010_" target="_blank" rel="external">@gviridis</a> 和 <a href="https://twitter.com/choonwook" target="_blank" rel="external">@choonwook</a> ，帮我确定了不少新问题也在讨论过程中提供了有用的思路。</p>
 <h3 id="你也可以做好任务管理"><a href="#你也可以做好任务管理" class="headerlink" title="你也可以做好任务管理"></a>你也可以做好任务管理</h3><p>做好任务管理并不难，只要掌握了一些简单的核心观念，其实人人都能轻松做好任务管理。Hum 根据自己多年以来对任务管理的研究和实践，并通过 <a href="https://sspai.com/post/38982" target="_blank" rel="external">《用更现代的方式做任务管理》</a> 系列穿越任务管理的重重疑点和误区，让你真正掌握任务管理并应用在工作和生活中。</p>
-<p><img src="/iamge/thing12.png" alt=""><br>用更现代的方式做任务管理<br>👉 你可以 <a href="http://sspai-paid.mikecrm.com/ysDoDFn" target="_blank" rel="external">点击这里</a> 购买《用更现代的方式做任务管理》系列教程，限时特价 39 元。 </p>
+<p><img src="/iamge/thing12.png" alt="thing12"><br>用更现代的方式做任务管理<br>👉 你可以 <a href="http://sspai-paid.mikecrm.com/ysDoDFn" target="_blank" rel="external">点击这里</a> 购买《用更现代的方式做任务管理》系列教程，限时特价 39 元。 </p>
 <p>📖 你可以 <a href="http://sspai.com/s/KPmp" target="_blank" rel="external">点击下载</a> 第一期试读 （如遇链接无法跳转，请复制右边链接在浏览器打开，会直接开始下载： <a href="http://sspai.com/s/KPmp" target="_blank" rel="external">http://sspai.com/s/KPmp</a> ）</p>
 <p><a href="https://sspai.com/post/39364" target="_blank" rel="external">Things 3 的任务结构和内在逻辑</a></p>
 
