@@ -90,20 +90,17 @@
 
 
 
-<meta name="description" content="用Mac安装过Windows双系统的小伙伴对Boot Camp这款Mac自带的工具应该不会陌生，使用Boot Camp，用户可以很方便的在自己的Mac上安装win10来满足自己对不同系统的需求。">
+<meta name="description" content="相信自己动手在Mac上安装过Windows双系统的小伙伴一定对BootCamp不陌生，BootCamp可以让用户很方便的在自己的Mac上安装Windows系统，以满足对不同系统的需求。然而许多小伙伴遇到过无法使用BootCamp删除Windows系统的情况，在这里我为大家找到了使用命令行的解决方法">
 <meta name="keywords" content="原创,Mac">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bootcamp的来龙去脉">
+<meta property="og:title" content="Bootcamp无法移除windows分区处理方法">
 <meta property="og:url" content="http://yoursite.com/2017/05/25/170602Bootcamp的来龙去脉/index.html">
 <meta property="og:site_name" content="葱葱葱的博客">
-<meta property="og:description" content="用Mac安装过Windows双系统的小伙伴对Boot Camp这款Mac自带的工具应该不会陌生，使用Boot Camp，用户可以很方便的在自己的Mac上安装win10来满足自己对不同系统的需求。">
-<meta property="og:image" content="http://yoursite.com/2017/05/25/170602Bootcamp的来龙去脉/Boot%20Camp.png">
-<meta property="og:image" content="http://yoursite.com/2017/05/25/170602Bootcamp的来龙去脉/首页.png">
-<meta property="og:updated_time" content="2017-06-02T06:04:12.000Z">
+<meta property="og:description" content="相信自己动手在Mac上安装过Windows双系统的小伙伴一定对BootCamp不陌生，BootCamp可以让用户很方便的在自己的Mac上安装Windows系统，以满足对不同系统的需求。然而许多小伙伴遇到过无法使用BootCamp删除Windows系统的情况，在这里我为大家找到了使用命令行的解决方法">
+<meta property="og:updated_time" content="2017-06-02T06:24:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bootcamp的来龙去脉">
-<meta name="twitter:description" content="用Mac安装过Windows双系统的小伙伴对Boot Camp这款Mac自带的工具应该不会陌生，使用Boot Camp，用户可以很方便的在自己的Mac上安装win10来满足自己对不同系统的需求。">
-<meta name="twitter:image" content="http://yoursite.com/2017/05/25/170602Bootcamp的来龙去脉/Boot%20Camp.png">
+<meta name="twitter:title" content="Bootcamp无法移除windows分区处理方法">
+<meta name="twitter:description" content="相信自己动手在Mac上安装过Windows双系统的小伙伴一定对BootCamp不陌生，BootCamp可以让用户很方便的在自己的Mac上安装Windows系统，以满足对不同系统的需求。然而许多小伙伴遇到过无法使用BootCamp删除Windows系统的情况，在这里我为大家找到了使用命令行的解决方法">
 
 
 
@@ -137,7 +134,7 @@
 
 
 
-  <title>Bootcamp的来龙去脉 | 葱葱葱的博客</title>
+  <title>Bootcamp无法移除windows分区处理方法 | 葱葱葱的博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -303,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Bootcamp的来龙去脉</h1>
+          <h1 class="post-title" itemprop="name headline">Bootcamp无法移除windows分区处理方法</h1>
         
 
         <div class="post-meta">
@@ -355,7 +352,7 @@
 
           
           
-             <span id="/2017/05/25/170602Bootcamp的来龙去脉/" class="leancloud_visitors" data-flag-title="Bootcamp的来龙去脉">
+             <span id="/2017/05/25/170602Bootcamp的来龙去脉/" class="leancloud_visitors" data-flag-title="Bootcamp无法移除windows分区处理方法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -383,9 +380,20 @@
       
 
       
-        <p><img src="/2017/05/25/170602Bootcamp的来龙去脉/Boot Camp.png" alt="Boot Camp"><br><strong>用Mac安装过Windows双系统的小伙伴对Boot Camp这款Mac自带的工具应该不会陌生，使用Boot Camp，用户可以很方便的在自己的Mac上安装win10来满足自己对不同系统的需求。</strong><br><a id="more"></a></p>
+        <p><strong>相信自己动手在Mac上安装过Windows双系统的小伙伴一定对BootCamp不陌生，BootCamp可以让用户很方便的在自己的Mac上安装Windows系统，以满足对不同系统的需求。然而许多小伙伴遇到过无法使用BootCamp删除Windows系统的情况，在这里我为大家找到了使用命令行的解决方法</strong><br><a id="more"></a></p>
 <hr>
-<p><img src="/2017/05/25/170602Bootcamp的来龙去脉/首页.png" alt="首页"></p>
+<h2 id="电脑中没有Recovery-HD分区："><a href="#电脑中没有Recovery-HD分区：" class="headerlink" title="电脑中没有Recovery HD分区："></a>电脑中没有Recovery HD分区：</h2><ol>
+<li>打开终端，输入<code>diskutil list</code>，找到你的windows分区对应的磁盘号，比如：disk0s3。</li>
+<li>格式化该分区为HFS+格式：<code>diskutil eraseVolume HFS+ Blank disk0s3</code>，<strong>Blank为你格式化后重命名的分区名</strong>。</li>
+<li>合并刚刚格式化的disk0s3分区到mac(disk0s2)分区上：<code>diskutil mergePartitions HFS+ Mac disk0s2 disk0s3</code>。</li>
+</ol>
+<hr>
+<h2 id="电脑中有Recovery-HD分区："><a href="#电脑中有Recovery-HD分区：" class="headerlink" title="电脑中有Recovery HD分区："></a>电脑中有Recovery HD分区：</h2><ol>
+<li>打开终端，输入<code>diskutil list</code>，找到你的Recovery HD分区和windows分区分别对应的磁盘号，比如：disk0s3(Recovery HD磁盘号)、disk0s4(windows磁盘号)。</li>
+<li>分别格式化两个分区为HFS+格式：<code>diskutil eraseVolume HFS+ Blank disk0s3，diskutil eraseVolume HFS+ Blank1 disk0s4</code>，<strong>Blank为你格式化后重命名的分区名</strong>。</li>
+<li>依次合并刚刚格式化的disk0s3、disk0s4分区到mac(disk0s2)分区上：<code>diskutil mergePartitions HFS+ Mac disk0s2 disk0s3，diskutil mergePartitions HFS+ Mac disk0s2 disk0s4</code>。</li>
+</ol>
+<hr>
 
       
     </div>
@@ -487,8 +495,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -570,6 +587,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电脑中没有Recovery-HD分区："><span class="nav-number">1.</span> <span class="nav-text">电脑中没有Recovery HD分区：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电脑中有Recovery-HD分区："><span class="nav-number">2.</span> <span class="nav-text">电脑中有Recovery HD分区：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
